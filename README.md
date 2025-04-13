@@ -56,6 +56,16 @@ With Note App, you can do more than just write notes. You can group them by topi
 - Auto **retry on network loss** (NetInfo)
 - Toasts work even when modals are shown
 
+## 📽️ Demo
+
+### ▶️ YouTube
+[![Watch the video](https://img.youtube.com/vi/SaSZTXjSHqA/0.jpg)]([https://youtu.be/SaSZTXjSHqA](https://www.youtube.com/watch?v=ROhpDZFpFqY))
+
+### 📸 GIF Preview
+![Note App Demo](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
+
+
+
 ## ⚙️ Setup & Run
 
 > **Requirements:** You need to have [Node.js](https://nodejs.org), [Expo CLI](https://docs.expo.dev/get-started/installation/), and use either `npm` or `yarn`.
