@@ -62,8 +62,7 @@ With Note App, you can do more than just write notes. You can group them by topi
 [![Watch the video](https://img.icons8.com/clouds/500/youtube-play.png)](https://www.youtube.com/watch?v=ROhpDZFpFqY)
 
 ### 📸 GIF Preview
-![Note App Demo](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
-
+![Note App Demo](https://raw.githubusercontent.com/ninhpd-sefr/note-app/refs/heads/main/src/assets/note-app.gif)
 
 
 ## ⚙️ Setup & Run
