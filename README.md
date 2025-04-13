@@ -32,13 +32,13 @@ With Note App, you can do more than just write notes. You can group them by topi
   - Social accounts: **Google**, **Facebook** (OAuth2)
 - Integrated with **Firebase Authentication**
 
-### 🗂️ Note Group Management
+#### 🗂️ Note Group Management
 - Create new note groups
 - Rename existing groups
 - Delete note groups
 - Each note belongs to a specific group
 
-### 📝 Note Management
+#### 📝 Note Management
 - Create notes with text and images
 - Edit note content
 - Delete notes
@@ -51,17 +51,17 @@ With Note App, you can do more than just write notes. You can group them by topi
 - View notes in **list** or **grid** mode
 - Pagination to optimize data loading
 
-### 🖼️ Advanced Features
+#### 🖼️ Advanced Features
 - Draw and edit directly on images (Skia)
 - Auto **retry on network loss** (NetInfo)
 - Toasts work even when modals are shown
 
 ## 📽️ Demo
 
-### ▶️ YouTube
+#### ▶️ YouTube
 [![Watch the video](https://img.icons8.com/clouds/500/youtube-play.png)](https://www.youtube.com/watch?v=ROhpDZFpFqY)
 
-### 📸 GIF Preview
+#### 📸 GIF Preview
 <img src="https://raw.githubusercontent.com/ninhpd-sefr/note-app/refs/heads/main/src/assets/note-app.gif" alt="Note App Demo" width="400"/>
 
 ## ⚙️ Setup & Run
