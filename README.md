@@ -14,14 +14,14 @@ With Note App, you can do more than just write notes. You can group them by topi
 ## ⚡ Highlights
 
 - ✅ Modern UI with smooth performance
-- ✅ Real-time data sync with Firebase
+- ✅ Data sync with Firebase
 - ✅ User authentication via Email, Google, Facebook
 - ✅ Notes can include text and images
 - ✅ List or Grid view modes
 - ✅ Draw directly on images using Skia
 - ✅ Lock notes with a 6-digit PIN
 - ✅ Toasts and UI feedback work even with modals open
-- ✅ State management with Redux Toolkit and Context API
+- ✅ State management with Context API
 
 ## 🚀 Features
 
@@ -103,6 +103,20 @@ note-app/
     ├── services/               # Firebase/Auth service logic
     ├── utils/                  # Utility functions (network check, etc.)
 ```
+
+## 🧰 Technologies
+
+**Frontend**:  
+- React Native (Expo)  
+- Context API
+- React Native Paper, Modal  
+- React Native Skia   
+- Toast Message, ViewShot  
+- NetInfo, Axios. 
+**Backend (via Firebase)**:  
+- Firebase Authentication (Email, Google, Facebook)  
+- Firestore Database (notes & groups)  
+- Cloudinary (image uploads) 
 
 ## 👤 Author
 
