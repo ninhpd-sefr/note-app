@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "note-app",
+    "slug": "note-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./src/assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ninhdangpham1711.noteapp",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ninhdangpham1711.noteapp",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "519708747525758",
+          "clientToken": "9c1e5569988492f03738669e22b10eda",
+          "displayName": "note-app",
+          "scheme": "fb519708747525758",
+          "advertiserIDCollectionEnabled": false,
+          "autoLogAppEventsEnabled": false,
+          "isAutoInitEnabled": true,
+          "iosUserTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ],
+      "expo-build-properties",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "apikey": "AIzaSyDZ955oxfaysxdhLOOoMNmfMFTthV8P7-s",
+      "authDomain": "note-3b6a2.firebaseapp.com",
+      "projectId": "note-3b6a2",
+      "storageBucket": "note-3b6a2.firebasestorage.app",
+      "messagingSenderId": "574267542582",
+      "appId": "1:574267542582:web:9ec6980f5f14c0f61b9c97",
+      "measurementId": "G-1MWKCFFHLV",
+      "GOOGLE_ANDROID_CLIENT_ID": "574267542582-h992ej02ffora04bchckh1ar7tinkqvb.apps.googleusercontent.com",
+      "GOOGLE_IOS_CLIENT_ID": "574267542582-bkmsk996it6i8a4k6tp0uthgs24f54ns.apps.googleusercontent.com",
+      "CLOUDINARY_UPLOAD_PRESET": "upload-yhlxiy4h",
+      "CLOUDINARY_CLOUD_NAME": "dsjhplhho",
+
+      "eas": {
+        "projectId": "b10f1d16-a768-49f3-bc30-60164e4bfe15"
+      }
+    },
+    "owner": "ninhdangpham1711"
+  }
+}
