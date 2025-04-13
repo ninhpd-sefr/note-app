@@ -120,7 +120,8 @@ note-app/
 - React Native Paper, Modal  
 - React Native Skia   
 - Toast Message, ViewShot  
-- NetInfo, Axios. 
+- NetInfo, Axios.
+
 **Backend (via Firebase)**:  
 - Firebase Authentication (Email, Google, Facebook)  
 - Firestore Database (notes & groups)  
