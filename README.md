@@ -25,7 +25,7 @@ With Note App, you can do more than just write notes. You can group them by topi
 
 ## 🚀 Features
 
-### 🔑 User Authentication
+#### 🔑 User Authentication
 - Sign up with **email and password**
 - Login with:
   - Email / password
