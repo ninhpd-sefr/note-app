@@ -4,11 +4,11 @@ import {
   View,
   Text,
   TouchableOpacity,
-  StyleSheet,
   GestureResponderEvent,
 } from "react-native";
 import { NoteGroup } from "../../types/type";
-import { Feather, Ionicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
+import { styles } from "./styles";
 
 type GroupItemProps = {
   item: NoteGroup;
@@ -46,39 +46,3 @@ const GroupItem: React.FC<GroupItemProps> = ({
 };
 
 export default GroupItem;
-
-const styles = StyleSheet.create({
-  noteItem: {
-    paddingVertical: 12,
-    paddingHorizontal: 18,
-    marginHorizontal: 20,
-    marginBottom: 12,
-    borderRadius: 12,
-    backgroundColor: "#FFFFFF",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
-    elevation: 3, // For Android shadow
-  },
-  content: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 8,
-  },
-  textContainer: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  noteText: {
-    fontSize: 17,
-    fontWeight: "600",
-    color: "#333",
-  },
-  noteCount: {
-    fontSize: 13,
-    color: "#888",
-    marginTop: 4,
-  },
-});

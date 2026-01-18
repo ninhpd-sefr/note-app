@@ -1,8 +1,5 @@
 // src/navigation/NavigationService.ts
-import {
-  createNavigationContainerRef,
-  StackActions,
-} from "@react-navigation/native";
+import { createNavigationContainerRef } from "@react-navigation/native";
 import { RootStackParamList } from "../app/navigation";
 
 export const navigationRef = createNavigationContainerRef<RootStackParamList>();

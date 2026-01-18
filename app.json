@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./src/assets/splash-icon.png",
       "resizeMode": "contain",
@@ -14,6 +14,11 @@
     },
     "ios": {
       "supportsTablet": true,
+      "icon": {
+        "light": "./src/assets/ios-light.png",
+        "dark": "./src/assets/ios-dark.png",
+        "tinted": "./src/assets/ios-tinted.png"
+      },
       "bundleIdentifier": "com.ninhdangpham1711.noteapp",
       "googleServicesFile": "./GoogleService-Info.plist",
       "infoPlist": {
@@ -44,7 +49,8 @@
       "googleServicesFile": "./google-services.json",
       "permissions": [
         "android.permission.INTERNET",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -85,11 +91,13 @@
       "GOOGLE_IOS_CLIENT_ID": "574267542582-bkmsk996it6i8a4k6tp0uthgs24f54ns.apps.googleusercontent.com",
       "CLOUDINARY_UPLOAD_PRESET": "upload-yhlxiy4h",
       "CLOUDINARY_CLOUD_NAME": "dsjhplhho",
-
       "eas": {
-        "projectId": "b10f1d16-a768-49f3-bc30-60164e4bfe15"
+        "projectId": "45f13c46-e103-4d45-aaea-3fdea2e8b132"
+      },
+      "router": {
+        "origin": false
       }
     },
-    "owner": "ninhdangpham1711"
+    "owner": "pdninh"
   }
 }

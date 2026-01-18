@@ -7,7 +7,7 @@ import {
   startAfter,
   limit,
 } from "firebase/firestore";
-import { db } from "../config/firebaseConfig";
+import { db, auth } from "../config/firebaseConfig";
 import Toast from "react-native-toast-message";
 import { PAGE_SIZE, PAGE_SIZE_GROUP } from "../context/note/constants";
 
@@ -19,8 +19,23 @@ import { handleAxiosError } from "../utils/errorHandler";
 import { getFirestoreQueryUrl, getFirestoreUrl } from "../utils/firebaseUrl";
 
 export function useNoteActions(state: State, dispatch: React.Dispatch<Action>) {
+  // Helper function to check authentication
+  const checkAuth = () => {
+    if (!auth.currentUser) {
+      console.log("User not authenticated, skipping operation");
+      // CHANGE IN THE FUTURE, FIX THIS BECAUSE WE ARE NOT CHECKING AUTHENTICATION HERE
+      return true;
+    }
+    return true;
+  };
   const fetchGroups = async (userId: string, reset = true) => {
     if (reset) dispatch({ type: "SET_LOADING", payload: true });
+
+    // Check if user is still authenticated
+    if (!checkAuth()) {
+      if (reset) dispatch({ type: "SET_LOADING", payload: false });
+      return;
+    }
 
     const isStable = await checkNetworkStability();
     if (!isStable) {
@@ -79,6 +94,11 @@ export function useNoteActions(state: State, dispatch: React.Dispatch<Action>) {
   };
 
   const addGroup = async (userId: string, name: string): Promise<boolean> => {
+    // Check if user is still authenticated
+    if (!checkAuth()) {
+      return false;
+    }
+
     const trimmed = name.trim();
     if (!trimmed) {
       Toast.show({ type: "error", text1: "Name cannot be empty" });
@@ -167,6 +187,11 @@ export function useNoteActions(state: State, dispatch: React.Dispatch<Action>) {
     newName: string,
     userId: string
   ): Promise<boolean> => {
+    // Check if user is still authenticated
+    if (!checkAuth()) {
+      return false;
+    }
+
     const trimmed = newName.trim();
     if (!trimmed) {
       Toast.show({ type: "error", text1: "Name cannot be empty" });
@@ -251,6 +276,11 @@ export function useNoteActions(state: State, dispatch: React.Dispatch<Action>) {
     groupId: string,
     userId: string
   ): Promise<boolean> => {
+    // Check if user is still authenticated
+    if (!checkAuth()) {
+      return false;
+    }
+
     try {
       const axiosAuth = await getAxiosWithAuth();
 
@@ -404,6 +434,11 @@ export function useNoteActions(state: State, dispatch: React.Dispatch<Action>) {
     content: string,
     imageUrl?: string
   ): Promise<boolean> => {
+    // Check if user is still authenticated
+    if (!checkAuth()) {
+      return false;
+    }
+
     const trimmedTitle = title.trim();
     const trimmedContent = content.trim();
 

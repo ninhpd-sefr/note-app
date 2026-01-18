@@ -1,0 +1,145 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../../constants/colors";
+
+export const styles = StyleSheet.create({
+  container: { flex: 1, padding: 16, backgroundColor: colors.background },
+  backButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  backText: {
+    fontSize: 16,
+    marginLeft: 6,
+    color: colors.text,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 0,
+    color: colors.text,
+  },
+  noteCard: {
+    padding: 12,
+    borderRadius: 8,
+    backgroundColor: colors.backgroundDark,
+    marginBottom: 10,
+    flex: 1,
+    marginRight: 8,
+  },
+  topIcons: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  noteTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: colors.text,
+    marginBottom: 4,
+  },
+  noteContent: { fontSize: 16, color: colors.textDark },
+  timestamp: {
+    fontSize: 12,
+    color: colors.textSecondary,
+    marginTop: 4,
+  },
+  addButton: {
+    position: "absolute",
+    bottom: 20,
+    right: 20,
+    backgroundColor: colors.primary,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: colors.primary,
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 5,
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: colors.overlay,
+  },
+  modalContent: {
+    width: "80%",
+    backgroundColor: colors.background,
+    padding: 20,
+    borderRadius: 10,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 10,
+    color: colors.text,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 10,
+    color: colors.inputText,
+    backgroundColor: colors.inputBackground,
+  },
+  textArea: {
+    height: 80,
+    textAlignVertical: "top",
+  },
+  modalButtons: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  cancelButton: {
+    padding: 10,
+  },
+  saveButton: {
+    backgroundColor: colors.buttonPrimary,
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: colors.secondary,
+    fontSize: 16,
+  },
+  menu: {
+    borderRadius: 10,
+    elevation: 4,
+  },
+  menuContent: {
+    backgroundColor: colors.background,
+    borderRadius: 10,
+    paddingVertical: 4,
+  },
+  menuItemText: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: colors.textDark,
+  },
+  deleteText: {
+    color: colors.error,
+    fontWeight: "600",
+  },
+  noteImage: {
+    width: "100%",
+    height: 180,
+    borderRadius: 8,
+    marginTop: 10,
+    resizeMode: "cover",
+  },
+  searchInput: {
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 10,
+    height: 45,
+    color: colors.inputText,
+    backgroundColor: colors.inputBackground,
+  },
+});

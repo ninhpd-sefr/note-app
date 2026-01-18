@@ -6,20 +6,23 @@ import { NoteProvider } from "./src/context/note/NoteContext";
 import { SessionUnlockProvider } from "./src/context/session/SessionUnlockContext";
 import { SnackbarProvider } from "./src/context/snack/SnackbarContext";
 import { NetworkProvider } from "./src/context/network/NetworkContext";
+import { LanguageProvider } from "./src/context/language";
 
 export default function App() {
   return (
     <PaperProvider>
-      <SnackbarProvider>
-        <NetworkProvider>
-          <NoteProvider>
-            <SessionUnlockProvider>
-              <AppNavigator />
-              <Toast />
-            </SessionUnlockProvider>
-          </NoteProvider>
-        </NetworkProvider>
-      </SnackbarProvider>
+      <LanguageProvider>
+        <SnackbarProvider>
+          <NetworkProvider>
+            <NoteProvider>
+              <SessionUnlockProvider>
+                <AppNavigator />
+                <Toast />
+              </SessionUnlockProvider>
+            </NoteProvider>
+          </NetworkProvider>
+        </SnackbarProvider>
+      </LanguageProvider>
     </PaperProvider>
   );
 }
